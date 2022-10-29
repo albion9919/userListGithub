@@ -10,7 +10,7 @@ function Commit({author, hash, date}) {
             <span className="block rounded-lg px-4 leading-normal bg-indigo-500 border border-purple text-white hover:bg-white hover:text-indigo-500"> {hash} </span>
         </div>
         <div className="basis-1/3">
-            <span className="block rounded-lg px-4 leading-normal bg-indigo-500 border border-purple text-white hover:bg-white hover:text-indigo-500"> {date} </span>
+            <span className="block rounded-lg px-4 leading-normal bg-indigo-500 border border-purple text-white hover:bg-white hover:text-indigo-500"> {new Date(date).toISOString().split('T')[0]} </span>
         </div>
     </div>
 }
