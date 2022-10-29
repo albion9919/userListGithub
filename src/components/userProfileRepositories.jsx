@@ -40,9 +40,9 @@ function UserProfileRepositories(){
     }, []);
 
     return <>
-        {display && userName ? <User/> : ""}
-        {display && userName ? <RepositoryList/> : ""}
-        {!display && userName ? <NotFound/> : ""}
+        {display ? <User/> : ""}
+        {display ? <RepositoryList/> : ""}
+        {!display ? <NotFound/> : ""}
     </>
 }
 

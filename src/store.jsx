@@ -59,7 +59,7 @@ const useUserStore = create((set) => ({
 }));
 
 const useDisplayStore = create((set) => ({
-    display: false,
+    display: -1,
     setDisplay: (display) =>
         set((state) => ({
             display: display
